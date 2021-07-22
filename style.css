@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+}
+
+h5 {
+  color: #e43834;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+h4 {
+  color: #e43834;
+  margin-bottom: 1em;
+}
+
+h3 {
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+header {
+  padding: 10px;
+  background-color: rgb(201, 48, 1);
+  margin-bottom: 1.5em;
+}
+
+header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img {
+  width: 40%;
+}
+
+.btn-icons {
+  border: none;
+  width: 60px;
+  height: 60px;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: inherit;
+  color: white;
+  font-size: 2em;
+}
+
+header a {
+  align-items: center;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: white;
+}
+
+.principal {
+  min-height: calc(100% - 3em);
+}
+.corpo {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  
+}
+
+table {
+  background-color: #0d0d0d;
+  width: 100%;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+thead {
+}
+
+th {
+  text-align: center;
+  color: #e43834;
+  background-color: #1a1a1a;
+  padding: 0.5em;
+}
+
+td {
+  padding: 0.2em 0.5em !important;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+#name {
+  width: 15%;
+  border-radius: 0.5em 0em 0em 0em;
+}
+
+#email {
+  width: 25%;
+}
+
+#tel {
+  width: 13%;
+}
+
+#end {
+  width: 35%;
+}
+
+.end {
+  color:red;
+  text-align: left !important;
+}
+
+#state {
+  border-radius: 0em 0.5em 0em 0em;
+}
+
+form {
+  background-color: #0d0d0d;
+  padding: 1em 1em 0.2em 1em;
+}
+
+.clienteForm {
+  width: 100%;
+}
+
+.formCadastro {
+  display: flex;
+  align-items: center;
+}
+
+.formCadastro div {
+  margin-bottom: 0.8em;
+}
+
+.formCadastro input {
+  width: 100%;
+  border: none;
+  background-color: #1a1a1a;
+  border-radius: 3px;
+  padding-left: 8px;
+  color: white;
+  height: 1.8em;
+}
+
+footer {
+  background-color: #0c0c0c;
+  color: #c1c1c1;
+  height: 3 em;
+}
+
+.footer {
+  padding: 1.5em 2.5em 0.5em 2.5em;
+}
+
+
+
+#copyright a:hover {
+  color: rgb(248, 175, 86);
+}
+
+#copyright {
+  background-color: #000000 !important;
+  padding: 0.5em;
+  margin: 0;
+}
+
+#copyright div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#copyright div span {
+  text-align: center;
+}
+
+#dBy {
+  font-size: 0.7em;
+}
+
+#fPag {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 300px) {
+  html,
+  body {
+    overflow-x: visible !important;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4.5em;
+  }
+
+  h6 {
+    font-size: 0.8em;
+  }
+  .corpo {
+    width: 90%;
+  }
+
+  header img {
+    width: 90%;
+  }
+
+  .btn-icons {
+    width: 35px;
+    height: 35px;
+    padding: 1px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .corpo {
+    width: 90%;
+  }
+
+  header img {
+    width: 90%;
+  }
+
+  #redesSociais i {
+    font-size: 2em !important;
+  }
+}
+
+@media (min-width: 3000px) {
+  .corpo {
+    min-height: 100%;
+    width: 70%;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header div {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
