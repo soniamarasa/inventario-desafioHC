@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Gestão de Cadastros - Óticas Pasquim</title>
+</head>
+
+<body>
+    <div class="principal">
+        <header class="content">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-4">
+                    <img src="/img/logo1.png" />
+                </div>
+
+                <div class="col-4 col-sm-4 col-md-3">
+                    <h1> <a href="index.html">INVENTÁRIO</a> </h1>
+                </div>
+
+                <div id="btnsI" class="col-4 col-sm-5 col-md-5">
+                    <div>
+                        <button class="btnsI ">
+                            <a id="clientes" href="/clientes.html"><i class="fas fa-users"></i><span> CLIENTES
+                                </span></a>
+                        </button>
+                        <button class="btnsI produtos selected">
+                            <a id="produtos" href="/produtos.html"><i class="fas fa-shopping-bag"></i>
+                                <span> PRODUTOS </span></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="corpo">
+            <div>
+                <form id="formCP">
+                    <h4><i class="fas fa-users"></i> CADASTRO DE PRODUTOS</h4>
+
+                    <div class="row formCadastro">
+                        <div class="col-12 col-sm-3  col-md-2 col-lg-1">
+                            <input required type="text" placeholder="Código" id="inputCod" />
+                        </div>
+                        <div class="col-12 col-sm-5  col-md-6 col-lg-3">
+                            <input required type="text" placeholder="Produto" id="inputProduto" />
+                        </div>
+
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-2">
+                            <select name="categoria" id="categoria">
+                                <option value="valor1" selected>Categorias</option>
+                                <option value="Armação p/ Grau">Armação Grau</option>
+                                <option value="Óculos de Sol">Óculos de Sol</option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-sm-4 col-md-5 col-lg-2">
+                            <input required type="number" step="0.01" placeholder="Valor" id="inputValor" />
+                        </div>
+
+                        <div class="col-12 col-sm-2 col-md-2 col-lg-2">
+                            <input required type="number" placeholder="Quantidade" id="inputQuant" />
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-5 col-lg-2 btnSubmit">
+                            <button class="btn btn-sm btn-success" id="submitB" type="submit">
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="tableContent">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="codT">CÓDIGO</th>
+                                <th id="proT">PRODUTO</th>
+                                <th id="catT">CATEGORIA</th>
+                                <th id="valT">VALOR R$</th>
+                                <th id="quaT">QUANTIDADE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row" id="copyright">
+            <div class="col">
+                <span> Todos os direitos reservados </span>
+                <span id="dBy">
+                    Desenvolvido por &nbsp<a target="_blank" href="https://soniamarasa.github.io/">Sônia Mara de Sá</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/produto.js"></script>
+</body>
+
+</html>

@@ -5,21 +5,16 @@
 
 h1 {
   color: white;
-}
-
-h5 {
-  color: #e43834;
-  text-align: center;
-  margin-bottom: 1em;
+  font-family: Nunito;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 h4 {
   color: #e43834;
-  margin-bottom: 1em;
-}
-
-h3 {
-  color: white;
+  margin-bottom: 0.5em;
+  font-family: Nunito;
+  font-weight: bold;
 }
 
 html,
@@ -27,12 +22,13 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  min-width: 350px;
 }
 
 body {
   background-color: #121212;
-  color: white;
-  font-family: 'Noto Sans SC', sans-serif;
+  color: rgb(190, 190, 190);
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -48,23 +44,66 @@ header div {
 }
 
 header img {
-  width: 40%;
+  width: 50%;
 }
 
-.btn-icons {
-  border: none;
-  width: 60px;
-  height: 60px;
-  padding: 3px;
-  border-radius: 50%;
-  background-color: inherit;
-  color: white;
-  font-size: 2em;
-}
-
-header a {
-  align-items: center;
+#btnsI {
   display: flex;
+  justify-content: flex-end;
+}
+
+.btnsI {
+  font-weight: bold;
+  border: none;
+  height: min-content;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.btnsI:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black !important ;
+}
+
+.btnsI i {
+  padding-right: 0.2em;
+}
+
+.clientes {
+  margin-right: 0.5em;
+}
+
+.selected {
+  background-color: black;
+  color: rgb(201, 48, 1);
+}
+
+.produtos {
+  margin-left: 0.5em;
+}
+
+.btnCliente,
+.btnProduto {
+  font-weight: bold;
+  width: 3em;
+  height: 3em;
+  border: none;
+  padding: 1em;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 5em;
+}
+
+
+#btnLG {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -87,18 +126,27 @@ a:visited {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 2em;
-  
+}
+
+.tableContent {
+  border-radius: 0.5em;
+  background-color: #0d0d0d;
+  padding: 0.5em;
+  margin-top: 1em;
 }
 
 table {
   background-color: #0d0d0d;
   width: 100%;
-  margin-top: 1em;
+  overflow: scroll;
+
   border-radius: 0.5em;
   padding: 1em;
 }
 
-thead {
+th,
+td {
+  border: 1px solid rgb(29, 29, 29);
 }
 
 th {
@@ -110,21 +158,20 @@ th {
 
 td {
   padding: 0.2em 0.5em !important;
-  border: 1px solid #1a1a1a;
+  /* border: 1px solid #1a1a1a; */
   text-align: center;
 }
 
 #name {
-  width: 15%;
-  border-radius: 0.5em 0em 0em 0em;
+  width: 20%;
 }
 
 #email {
-  width: 25%;
+  width: 30%;
 }
 
 #tel {
-  width: 13%;
+  width: 15%;
 }
 
 #end {
@@ -132,17 +179,14 @@ td {
 }
 
 .end {
-  color:red;
   text-align: left !important;
-}
-
-#state {
-  border-radius: 0em 0.5em 0em 0em;
 }
 
 form {
   background-color: #0d0d0d;
   padding: 1em 1em 0.2em 1em;
+  text-align: center;
+  border-radius: 0.5em;
 }
 
 .clienteForm {
@@ -158,7 +202,8 @@ form {
   margin-bottom: 0.8em;
 }
 
-.formCadastro input {
+.formCadastro input,
+.formCadastro select {
   width: 100%;
   border: none;
   background-color: #1a1a1a;
@@ -166,6 +211,16 @@ form {
   padding-left: 8px;
   color: white;
   height: 1.8em;
+}
+
+.btnSubmit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#cep {
+  width: 100%;
+  min-width: 100%;
 }
 
 footer {
@@ -177,8 +232,6 @@ footer {
 .footer {
   padding: 1.5em 2.5em 0.5em 2.5em;
 }
-
-
 
 #copyright a:hover {
   color: rgb(248, 175, 86);
@@ -215,13 +268,18 @@ footer {
     overflow-x: visible !important;
   }
   h1 {
-    font-size: 3em;
+    font-size: 1em;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+  .btnSubmit {
+    display: flex;
+    justify-content: center;
+  }
+
   h1 {
-    font-size: 4.5em;
+    font-size: 1.5em;
   }
 
   h6 {
@@ -229,6 +287,28 @@ footer {
   }
   .corpo {
     width: 90%;
+  }
+
+  .btnsI span {
+    display: none;
+  }
+
+  .btnsI {
+    border: none;
+    width: 1.9em;
+    height: 1.9em;
+    padding: 0.3em;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 1.3em;
+    margin-right: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnsI i {
+    padding-right: 0;
   }
 
   header img {
@@ -241,40 +321,25 @@ footer {
     padding: 1px;
     font-size: 1em;
   }
-}
-
-@media (max-width: 800px) {
-  .corpo {
-    width: 90%;
+  .tableContent {
+    width: 100%;
+    /* max-width: 1000px; */
+    overflow-x: scroll;
+    font-size: 0.8em;
   }
 
-  header img {
-    width: 90%;
-  }
-
-  #redesSociais i {
-    font-size: 2em !important;
+  table {
+    width: max-content;
+    min-width: 100%;
   }
 }
 
-@media (min-width: 3000px) {
-  .corpo {
-    min-height: 100%;
-    width: 70%;
-  }
+#codT,
+#quaT,
+#valT {
+  width: 15%;
+}
 
-  header {
-    display: flex;
-    justify-content: center;
-  }
-
-  header div {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .footer {
-    width: 70%;
-    margin: 0 auto;
-  }
+#cat {
+  width: 25%;
 }
