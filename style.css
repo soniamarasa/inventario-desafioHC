@@ -44,7 +44,7 @@ header div {
 }
 
 header img {
-  width: 50%;
+  width: 40%;
 }
 
 #btnsI {
@@ -92,18 +92,29 @@ header img {
   width: 3em;
   height: 3em;
   border: none;
-  padding: 1em;
+  padding: 0em;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+   background-color: black;
   font-size: 5em;
+  margin: 3% !important;
 }
-
 
 #btnLG {
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  padding-top: 1.5em;
+}
+
+#btnLG a:hover {
+  color: #e43834 !important;
+}
+
+.btnCliente:hover,
+.btnProduto:hover {
+  color: #e43834 !important;
+
 }
 
 a {
@@ -120,8 +131,9 @@ a:visited {
 }
 
 .principal {
-  min-height: calc(100% - 3em);
+  min-height: calc(100% - 3.5em);
 }
+
 .corpo {
   width: 90%;
   margin: 0 auto;
@@ -226,11 +238,7 @@ form {
 footer {
   background-color: #0c0c0c;
   color: #c1c1c1;
-  height: 3 em;
-}
-
-.footer {
-  padding: 1.5em 2.5em 0.5em 2.5em;
+  height: 3.5em;
 }
 
 #copyright a:hover {
@@ -294,25 +302,20 @@ footer {
   }
 
   .btnsI {
-    border: none;
-    width: 1.9em;
-    height: 1.9em;
-    padding: 0.3em;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    font-size: 1.3em;
-    margin-right: 0.2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .btnsI i {
     padding-right: 0;
   }
 
+  #btnLG {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column !important;
+  }
+
   header img {
-    width: 90%;
+    width: 80%;
   }
 
   .btn-icons {
