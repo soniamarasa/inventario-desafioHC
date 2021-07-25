@@ -33,26 +33,21 @@ window.addEventListener('load', () => {
   listagem();
 });
 
-
-
 function listagem() {
-    let dados = JSON.parse(localStorage.getItem('cadastroProduto'));
-  
-    let tableP = document.getElementById('tbody');
-    for (i = 0; i < dados.length; i++) {
-      let client = Object.values(dados[i]);
-  
-      let tr = document.createElement('tr');
-  
-  
-      for (j = 0; j < client.length; j++) {
-        
-          let td = document.createElement('td');
-          td.textContent = client[j];
-          tr.appendChild(td);
-        
-      }
-  
-      tableP.appendChild(tr);
+  let dados = JSON.parse(localStorage.getItem('cadastroProduto'));
+
+  let tableP = document.getElementById('tbody');
+  for (i = 0; i < dados.length; i++) {
+    let client = Object.values(dados[i]);
+
+    let tr = document.createElement('tr');
+
+    for (j = 0; j < client.length; j++) {
+      let td = document.createElement('td');
+      td.textContent = client[j];
+      tr.appendChild(td);
     }
+
+    tableP.appendChild(tr);
   }
+}
