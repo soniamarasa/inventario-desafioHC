@@ -5,16 +5,16 @@
 Esse projeto consiste em um sistema e-commerce para inventário de produtos e dados de clientes.
 
 ### Construção ###
-Foi desenvolvido usando as seguintes tecnologias: HTML, CSS, JavaScript.
+O presente projeto foi desenvolvido usando as seguintes tecnologias: HTML, CSS, JavaScript.
 
-### Sobre o Projeto ### 
+### Sobre ### 
 
-O projeto consiste em uma gestão de cadastros de clientes e produtos de uma Ótica, e contém 3 páginas:
+Consiste em uma gestão de cadastros de clientes e produtos de uma Ótica, e contém 3 páginas:
 
-- Index: Pagina inicial onde o visitante consegue acessar as outras 2 paginas fara efetuar os cadastros:
+- Index: Pagina inicial onde o usuário consegue acessar as outras 2 páginas para efetuar os cadastros:
 
-     - Clientes - Destinada para o cadastro (dados e endereço) de clientes e exibição dos clientes já cadastrados. 
-     - Produtos - Destinada para o cadastro de produtos e exibição dos produtos já cadastrados. 
+     - Clientes: Destinada para o cadastro (dados e endereço) e exibição dos clientes já cadastrados. 
+     - Produtos: Destinada para o cadastro e exibição dos produtos já cadastrados. 
 
 Os dados cadastrais são salvos no LocalStorage. 
 
