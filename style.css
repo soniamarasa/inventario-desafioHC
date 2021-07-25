@@ -12,9 +12,10 @@ h1 {
 
 h4 {
   color: #e43834;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   font-family: Nunito;
   font-weight: bold;
+  text-align: center;
 }
 
 html,
@@ -94,7 +95,7 @@ header img {
   border: none;
   padding: 0em;
   border-radius: 50%;
-   background-color: black;
+  background-color: black;
   font-size: 5em;
   margin: 3% !important;
 }
@@ -114,7 +115,6 @@ header img {
 .btnCliente:hover,
 .btnProduto:hover {
   color: #e43834 !important;
-
 }
 
 a {

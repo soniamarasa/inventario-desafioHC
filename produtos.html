@@ -35,11 +35,11 @@
                 <div id="btnsI" class="col-4 col-sm-4 col-md-4">
                     <div id="">
                         <button class="btnsI ">
-                            <a id="clientes" href="/clientes.html"><i class="fas fa-users"></i><span> CLIENTES
+                            <a id="clientes" href="/clientes"><i class="fas fa-users"></i><span> CLIENTES
                                 </span></a>
                         </button>
                         <button class="btnsI produtos selected">
-                            <a id="produtos" href="/produtos.html"><i class="fas fa-shopping-bag"></i>
+                            <a id="produtos" href="/produtos"><i class="fas fa-shopping-bag"></i>
                                 <span> PRODUTOS </span></a>
                         </button>
                     </div>
@@ -49,35 +49,34 @@
 
         <div class="corpo">
             <div>
+                <h4><i class="fas fa-users"></i> CADASTRO DE PRODUTOS</h4>
                 <form id="formCP">
-                    <h4><i class="fas fa-users"></i> CADASTRO DE PRODUTOS</h4>
-
                     <div class="row formCadastro">
-                        <div class="col-12 col-sm-3  col-md-2 col-lg-1">
-                            <input required type="text" placeholder="Código" id="inputCod" />
+                        <div class="col-12 col-sm-6  col-md-4 col-lg-2">
+                            <input required type="text" placeholder="Código do Prod." id="inputCod" />
                         </div>
-                        <div class="col-12 col-sm-5  col-md-6 col-lg-3">
+                        <div class="col-12 col-sm-6  col-md-8 col-lg-3">
                             <input required type="text" placeholder="Produto" id="inputProduto" />
                         </div>
 
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-2">
+                        <div class="col-12 col-sm-5 col-md-6 col-lg-2">
                             <select name="categoria" id="categoria">
-                                <option value="valor1" selected>Categorias</option>
+                                <option value="valor1" selected disabled>Categoria: </option>
                                 <option value="Armação p/ Grau">Armação para grau</option>
                                 <option value="Óculos de Sol">Óculos de sol</option>
 
                             </select>
                         </div>
 
-                        <div class="col-12 col-sm-4 col-md-5 col-lg-2">
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
                             <input required type="number" step="0.01" placeholder="Valor" id="inputValor" />
                         </div>
 
-                        <div class="col-12 col-sm-2 col-md-2 col-lg-2">
+                        <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                             <input required type="number" placeholder="Quantidade" id="inputQuant" />
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-5 col-lg-2 btnSubmit">
+                        <div class="col-2 col-sm-1 col-md-1 col-lg-1 btnSubmit">
                             <button class="btn btn-sm btn-success" id="submitB" type="submit">
                                 <i class="fas fa-check"></i>
                             </button>
