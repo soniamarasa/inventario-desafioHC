@@ -46,7 +46,6 @@ header div {
 
 header img {
   width: 40%;
- 
 }
 
 #btnsI {
@@ -271,7 +270,7 @@ footer {
   justify-content: center;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   html,
   body {
     overflow-x: visible !important;
@@ -302,9 +301,6 @@ footer {
     display: none;
   }
 
-  .btnsI {
-  }
-
   .btnsI i {
     padding-right: 0;
   }
@@ -313,10 +309,11 @@ footer {
     padding-top: 0;
     display: flex;
     flex-direction: column !important;
+    align-items: center !important;
   }
 
   header img {
-    width: 80%;
+    width: 75%;
   }
 
   .btn-icons {
@@ -346,4 +343,8 @@ footer {
 
 #cat {
   width: 25%;
+}
+
+button {
+  cursor: default !important;
 }
